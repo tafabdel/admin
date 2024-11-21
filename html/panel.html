@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QB Admin Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="panel.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a7cfd764f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="admin-panel">
+        <div class="sidebar">
+            <h2>QB Admin Menu</h2>
+            <button class="tab-button active" data-tab="player-management"><i class="fas fa-users"></i> Players</button>
+            <button class="tab-button" data-tab="server-management"><i class="fas fa-server"></i> Server</button>
+            <button class="tab-button" data-tab="vehicle-options"><i class="fas fa-car"></i> Vehicles</button>
+            <button class="tab-button" data-tab="dev-tools"><i class="fas fa-tools"></i> Dev Tools</button>
+            <button id="close-button"><i class="fas fa-times"></i> Close</button>
+        </div>
+        <div class="content">
+            <div id="player-management" class="tab-pane active">
+                <h3>Player Management</h3>
+                <input type="text" id="player-search" placeholder="Search players...">
+                <div id="player-list"></div>
+                <div id="player-actions"></div>
+            </div>
+            <div id="server-management" class="tab-pane">
+                <h3>Server Management</h3>
+                <div id="server-actions"></div>
+            </div>
+            <div id="vehicle-options" class="tab-pane">
+                <h3>Vehicle Options</h3>
+                <div id="vehicle-actions"></div>
+            </div>
+            <div id="dev-tools" class="tab-pane">
+                <h3>Dev Tools</h3>
+                <div id="dev-actions"></div>
+            </div>
+        </div>
+    </div>
+    <script src="panel.js"></script>
+</body>
+</html>
+
